@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\Usuario\Dropbox\PC\Documents\TUDAI\Programacion 2\.metadata\.plugins\org.eclipse.jdt.core
+2374424134.index
+4260111049.index
+2330661471.index
+1865797976.index

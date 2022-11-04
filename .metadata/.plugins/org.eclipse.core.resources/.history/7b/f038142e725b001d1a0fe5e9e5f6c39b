@@ -1,0 +1,45 @@
+package sistemaGastosPublicos;
+
+public class Ciudad {
+	private double recaudo;
+	private double gastos;
+	private int tamanio;
+	
+	public Ciudad(double recuado, double gastos, int tamanio) {
+		this.recaudo=recaudo;
+		this.gastos=gastos;
+		this.tamanio=tamanio;
+	}
+
+	public double getRecaudo() {
+		return recaudo;
+	}
+
+	public void setRecaudo(double recaudo) {
+		this.recaudo = recaudo;
+	}
+
+	public double getGastos() {
+		return gastos;
+	}
+
+	public void setGastos(double gastos) {
+		this.gastos = gastos;
+	}
+
+	public int getTamanio() {
+		return tamanio;
+	}
+
+	public void setTamanio(int tamanio) {
+		this.tamanio = tamanio;
+	}
+	
+	public boolean enDeficit(Ciudad c1) {
+		if (c1.getGastos()> c1.getRecaudo()) 
+			return true;
+		else
+			return false;
+	}
+
+}

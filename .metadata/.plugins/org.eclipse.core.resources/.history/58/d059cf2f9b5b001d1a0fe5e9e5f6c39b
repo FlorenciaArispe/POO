@@ -1,0 +1,18 @@
+package alarmaSensorial;
+
+public class Main {
+	
+	public static void main (String [] args) {
+		AlarmaSensorial alarmasensorial= new AlarmaSensorial();
+		Sensor s1= new Sensor("habitacion");
+		alarmasensorial.corroborarEstado();
+		alarmasensorial.addSensor(s1);
+		
+	
+		
+		alarmasensorial.activarSensor(s1);
+		
+		alarmasensorial.corroborarEstado();
+	}
+
+}

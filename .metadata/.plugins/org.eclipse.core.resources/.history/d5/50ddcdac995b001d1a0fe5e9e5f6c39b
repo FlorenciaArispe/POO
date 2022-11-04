@@ -1,0 +1,24 @@
+package alarmaSensorial;
+
+import java.util.ArrayList;
+
+public class AlarmaSensorial {
+	private ArrayList<Sensor> sensores;
+	
+	public AlarmaSensorial() {
+		this.sensores= new ArrayList<>();
+	}
+	
+	public void addSensor(Sensor s) {
+		if(!sensores.contains(s)) {
+			this.sensores.add(s);
+		}
+	}
+	
+	
+
+	
+	
+	
+
+}

@@ -1,0 +1,12 @@
+package sueldos;
+
+public class Main {
+	
+	public static void main (String [] args) {
+		Empresa empresa= new Empresa();
+		
+		Empleado e1= new Empleado(400);
+		Empleado e1= new EmpleadoHextra(400,10);
+	}
+
+}

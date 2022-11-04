@@ -1,0 +1,17 @@
+package sistemaEncuesta;
+
+public class Encuesta {
+	private int numeroEncuesta;
+	private String preguntas;
+	private Empleado empleado;
+	private Persona persona;
+	
+	public Encuesta(int numero, String preguntas, Empleado e1, Persona p1) {
+		this.numeroEncuesta=numero;
+		this.preguntas=preguntas;
+		this.empleado= empleado;
+		this.persona=persona;		
+	}
+	
+
+}

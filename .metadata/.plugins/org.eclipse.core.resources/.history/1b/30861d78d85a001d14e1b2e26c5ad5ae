@@ -1,0 +1,17 @@
+package ElementosGeometricos;
+
+public class Rectangulo {
+	double lado1;
+	double lado2;
+	
+	public Rectangulo(double lado1, double lado2) {
+		this.lado1=setLado1(lado1);
+	}
+	
+	public void setLado1(double lado1) {
+		if (lado1 >=0) {
+			this.lado1=lado1;
+		}
+	}
+
+}

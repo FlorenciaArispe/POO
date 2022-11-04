@@ -1,0 +1,11 @@
+package alarmaSensorial;
+
+public class SensorMovimiento extends AlarmaSensorial {
+	private String zonaControlada;
+	
+	public SensorMovimiento(String zona) {
+		this.zonaControlada=zona;
+	}
+	
+	
+}

@@ -1,0 +1,24 @@
+package personas;
+
+import java.time.LocalDate;
+
+public class Persona {
+	String nombre;
+	LocalDate nacimiento;
+	int dni;
+	String sexo;
+	double altura;
+	double peso;
+	
+	public Persona(int dni) {
+		this("NN",  LocalDate.of(2000,1,1), dni, "Femenino", 1, 1);
+	}
+	 public Persona(String nombre, LocalDate localDate ,int dni ,String sexo , double altura,double peso) {
+		 this.nombre= nombre;
+		 this.nacimiento= localDate;
+		 this.dni=dni;
+		 this.sexo=sexo;
+		 this.altura=altura;
+		 this.peso=peso;		 
+	 }
+}

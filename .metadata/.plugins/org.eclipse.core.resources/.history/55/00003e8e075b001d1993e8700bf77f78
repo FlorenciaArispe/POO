@@ -1,0 +1,21 @@
+package agendaPersonal;
+
+import java.util.ArrayList;
+
+public class Agenda {
+	private ArrayList<Reunion> reuniones;
+	private ArrayList<Participante> participantes;
+	
+	public Agenda () {
+		this.reuniones= new ArrayList<>();
+		this.participantes= new ArrayList<>();
+	}
+	
+	public void addReunion(Reunion r) {
+		this.reuniones.add(r);
+	}
+	public void addParticipante(Participante p) {
+		this.participantes.add(p);
+	}
+
+}

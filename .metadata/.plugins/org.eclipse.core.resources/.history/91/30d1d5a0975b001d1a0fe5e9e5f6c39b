@@ -1,0 +1,15 @@
+package alarmaSensorial;
+
+public class Sensor {
+	private String zonaControlada;
+	private String comportamiento;
+	
+	public Sensor(String zona, String comportamiento) {
+		this.zonaControlada=zona;
+		this.comportamiento= comportamiento;
+	}
+	
+	
+	
+	
+}

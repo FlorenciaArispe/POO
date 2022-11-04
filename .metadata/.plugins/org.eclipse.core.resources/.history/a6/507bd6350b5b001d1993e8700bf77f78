@@ -1,0 +1,64 @@
+package agendaPersonal;
+
+import java.time.LocalTime;
+import java.util.ArrayList;
+
+public class Reunion {
+	private String tema;
+	private LocalTime horaInicio;
+	private LocalTime horaFin;
+	private String lugar;
+	private ArrayList<Participante> participantes;
+	
+	public Reunion(String tema,  String lugar, LocalTime inicio, LocalTime fin) {
+		this.tema=tema;
+		this.horaInicio=inicio;
+		this.horaFin=fin;
+		this.lugar=lugar;
+		this.participantes= new ArrayList<>();
+	}
+	
+	public void addParticipante(Participante p) {
+		this.participantes.add(p);
+	}
+	
+	
+	public String getTema() {
+		return tema;
+	}
+	public void setTema(String tema) {
+		this.tema = tema;
+	}
+	public LocalTime getHoraInicio() {
+		return horaInicio;
+	}
+	public void setHoraInicio(LocalTime horaInicio) {
+		this.horaInicio = horaInicio;
+	}
+	public LocalTime getHoraFin() {
+		return horaFin;
+	}
+	public void setHoraFin(LocalTime horaFin) {
+		this.horaFin = horaFin;
+	}
+	public String getLugar() {
+		return lugar;
+	}
+	public void setLugar(String lugar) {
+		this.lugar = lugar;
+	}
+	
+	public boolean tengoConflicto(Reunion r) {
+		boolean empiezaAntes= (this.getHoraInicio().isBefore(r.getHoraFin()));
+		boolean terminaDespues=(this.getHoraFin().isAfter(r.horaInicio));
+		if (empiezaAntes && terminaDespues) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	
+
+}

@@ -1,0 +1,17 @@
+package series;
+
+public class Capitulo {
+	private String titulo;
+	private String descripcion;
+	private int califacion;
+	
+	public Capitulo(String titulo, String descripcion) {
+		this.titulo=titulo;
+		this.descripcion=descripcion;
+		this.califacion=-1;
+	}
+	
+	
+	
+}
+

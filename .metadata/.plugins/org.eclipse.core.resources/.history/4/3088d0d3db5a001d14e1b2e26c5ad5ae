@@ -1,0 +1,77 @@
+package electrodomesticos;
+
+public class Electrodomestico {
+	String nombre;
+	double precioBase;
+	String color;
+	double consumoEner;
+	double peso;
+	
+	public static final int MAXBC=45;
+	
+	public Electrodomestico(String nombre,double precioBase,String color,double consumoEner,double peso) {
+		this.nombre=nombre;
+		this.precioBase=precioBase;
+		this.color=color;
+		this.consumoEner=consumoEner;
+		this.peso=peso;
+	}
+	
+	public Electrodomestico(String nombre) {
+		this(nombre, 100, "gris plata", 10, 2);
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public double getPrecioBase() {
+		return precioBase;
+	}
+
+	public void setPrecioBase(double precioBase) {
+		this.precioBase = precioBase;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public double getConsumoEner() {
+		return consumoEner;
+	}
+
+	public void setConsumoEner(double consumoEner) {
+		this.consumoEner = consumoEner;
+	}
+
+	public double getPeso() {
+		return peso;
+	}
+
+	public void setPeso(double peso) {
+		this.peso = peso;
+	}
+	
+	public boolean bajoConsumo() {
+		return (getConsumoEner()<= MAXBC);
+	}
+	
+	public double balance() {
+		return (precioBase/peso);
+	}
+	
+	public boolean altaGama() {
+		return (balance()>3);
+	}
+	
+
+}

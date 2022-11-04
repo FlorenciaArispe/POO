@@ -1,0 +1,14 @@
+package sueldos;
+
+public class EmpleadoHextra extends Empleado{
+	private int horasExtras;
+	
+	public EmpleadoHextra(double sueldo, int horasExtras) {
+		super(sueldo);
+		this.horasExtras=horasExtras;
+	}
+	
+	public double getSueldo() {
+		return super.getSueldo() + horasExtras*10;
+	}
+}

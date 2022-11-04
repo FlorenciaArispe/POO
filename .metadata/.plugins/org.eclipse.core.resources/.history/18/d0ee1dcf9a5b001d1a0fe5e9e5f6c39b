@@ -1,0 +1,11 @@
+package alarmaSensorial;
+
+public class Main {
+	
+	public static void main (String [] args) {
+		AlarmaSensorial alarmasensorial= new AlarmaSensorial();
+		
+		Sensor s1= new Sensor("habitacion");
+	}
+
+}

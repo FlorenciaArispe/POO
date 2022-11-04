@@ -1,0 +1,15 @@
+package tp4;
+
+public class Main {
+	
+	public static void main(String []args) {
+		Alarma a1= new Alarma();
+		
+		a1.setMovimiento();
+		
+		a1.comprobar();
+		
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+package sistemaEncuesta;
+
+import java.util.ArrayList;
+
+public class Compania {
+	private ArrayList<EncuestaRespondida> encuestasRespondidas;
+	private ArrayList<Empleado> empleados;
+	
+	
+	public Compania() {
+		this.encuestasRespondidas= new ArrayList<>();
+		this.empleados= new ArrayList<>();
+		
+	}
+	
+	public void addEncuesta(EncuestaRespondida e1) {
+		for(EncuestaRespondida e: this.encuestasRespondidas) {
+			if(e.getNumeroEncuesta()!= e1.getNumeroEncuesta()) {
+				this.encuestasRespondidas.add(e1);				
+			}	
+			
+		}
+	}
+
+}

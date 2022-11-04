@@ -1,0 +1,11 @@
+package alarmaSensorial;
+
+public class Sensor {
+	private String zonaControlada;
+	
+	public Sensor(String zona) {
+		this.zonaControlada=zona;
+	}
+	
+	
+}

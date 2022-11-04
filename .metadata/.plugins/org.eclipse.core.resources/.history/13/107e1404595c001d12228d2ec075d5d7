@@ -1,0 +1,56 @@
+package escuelaHogwarts;
+
+import java.util.ArrayList;
+
+public class Casa {
+	private ArrayList <String> cualidades;
+	private ArrayList <Alumno> alumnos;
+	private int cantMaxAlumnos;
+	
+	public Casa(int cantidad) {
+		this.cantMaxAlumnos=cantidad;
+		this.cualidades= new ArrayList <> ();
+		this.alumnos=new ArrayList <> ();
+	}
+	
+	public void addCualidad(String cualidad) {
+		if (!cualidad.contains(cualidad))
+			cualidades.add(cualidad);
+	}
+	
+	public void addAlumno(Alumno a) {
+		if (alumnoApto(a))
+			getAlumnos().add(a);
+	}
+	
+	public void setCantMaxAlumnos(int cantMaxAlumnos) {
+		this.cantMaxAlumnos = cantMaxAlumnos;
+	}
+
+	public int getCantMaxAlumnos() {
+		return this.cantMaxAlumnos;
+	}
+	
+	public boolean alumnoApto(Alumno a) {
+		if ((a.getCualidades().contains(this.cualidades))&&(this.getCantMaxAlumnos()!= getAlumnos().size())) {
+			return true;
+		}
+		return false;
+	}
+
+	public ArrayList <Alumno> getAlumnos() {
+		ArrayList<Alumno> copia= new ArrayList <>();
+		copia=alumnos;
+		return copia;
+	}
+	
+	public ArrayList <String> getCualidades() {
+		ArrayList<String> copia= new ArrayList <>();
+		copia=cualidades;
+		return copia;
+	}
+
+
+	
+
+}
